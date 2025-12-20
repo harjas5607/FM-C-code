@@ -1,0 +1,32 @@
+1. The program reads three integers, validates input, and calculates their sum. It checks whether the sum is even or odd using modulus. Then it tests if the sum is prime by checking divisibility from 2 to sum/2. If no divisor is found, it’s prime; otherwise composite.
+
+2. The program accepts total seconds as input and validates that it’s a non-negative integer. It converts seconds to hours by dividing by 3600, then stores the leftover seconds using modulus. It repeats division and modulus to calculate minutes and remaining seconds. Finally, it prints the hours, minutes, and remaining seconds separately.
+
+3. The program asks the user to enter total electricity units and validates that the input is non-negative. It calculates the bill according to slab rates: ₹5 per unit for the first 100 units, ₹8 per unit for the next 200 units, and ₹10 per unit for units above 300. Finally, it prints the total bill.
+
+4.  The program allows the user to set a password, then starts a login process with three attempts. Inside a loop, it asks for a password and compares it with the stored string using `strcmp()`. If matched, access is granted; otherwise attempts decrease until they reach zero, after which access is denied.
+
+5. The program reads an integer array and validates its size and input. It removes duplicates using nested loops by comparing each element with the following ones. When a duplicate is found, elements are shifted left to overwrite it and the array size is reduced. The final array without duplicates is then printed.
+
+6. The program reads a string, calculates its length, and counts vowels and consonants by checking each character. It ignores non-alphabetic characters. After counting, it shuffles the string randomly using rand() and srand(time(NULL)) and the Fisher-Yates swap method, producing a scrambled string. Finally, it prints the counts and shuffled result.
+
+7. The program reads array size and elements using pointers. It initializes the largest and second-largest values by comparing the first two elements. Then it scans remaining elements, updating the two maximum values whenever a larger value is found. Pointer dereferencing is used for comparisons. Finally, it prints the second-largest element.
+
+8. The program reads the size and elements of an array using pointers. It loops through the array in steps of two, swapping each adjacent pair using pointer dereferencing and a temporary variable. After completing all valid swaps, it prints the updated array, where every two neighboring values have exchanged their positions.
+
+9. The program takes input for a 4×4 matrix and validates each entry. While printing the matrix, it keeps adding values to compute the total sum. It also checks when row and column indices are equal to sum the primary diagonal, and when indices sum to 3 to add secondary diagonal elements. Finally, results are printed.
+
+10. The program reads the number of rows and columns, validates them, and stores matrix elements. To rotate 90° clockwise, it places each element at a new transposed and reversed position in another matrix: row becomes column and columns reverse using rotated[j][r-i-1] = arr[i][j]. Finally, the rotated matrix is printed.
+
+11. The program reads an array and lets the user choose Bubble or Selection sort. It sorts the array according to the selected method by swapping elements where needed. After sorting, it performs binary search by repeatedly checking the middle element and adjusting search bounds. Finally, it prints whether the key was found and its position.
+
+12. The program stores product details using a structure containing ID, name, quantity, and price. It reads n products, validates inputs, calculates inventory value by multiplying quantity and price, and keeps track of the product with maximum quantity and maximum price. Finally, it prints the total inventory value and the details of both highest products.
+
+13. The program reads the number of rows, validates input, and prints a pyramid star pattern. For each row, it first prints spaces to align stars centrally, then prints stars followed by spaces. The number of spaces decreases and stars increase each row, forming an equilateral triangular pattern of n rows.
+
+14. The program accepts a filename and opens it for reading. It reads characters one by one using fgetc(), incrementing counters for characters, words, and lines. Words are counted by detecting transitions from whitespace to non-whitespace using a flag variable. After reaching EOF, it prints the total characters, words, and lines found.
+
+15. The program reads a non-negative integer n, validates input, and computes the nth Fibonacci number using a recursive function. The function returns 0 or 1 for base cases n=0 and n=1, otherwise it calls itself to compute the sum of the two preceding Fibonacci terms. The result is printed.
+
+16. The program reads a string and prints the first character, then uses a recursive function to compress it. The function counts consecutive repeating characters by comparing the current and previous characters. When a change occurs, it prints the count and new character, then resets the count. It stops when the null terminator is reached.
+
